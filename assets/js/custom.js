@@ -156,4 +156,11 @@
 		}
 	}
 
+	tippy.setDefaults({
+        arrow: true,
+        delay: 40,
+		theme: 'my-tippy',
+		placement: 'bottom'
+      })
+
 })(jQuery);
