@@ -1,18 +1,15 @@
 <!DOCTYPE HTML>
-<!--
-	Dimension by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
 
 <head>
-	<title>Dimension by HTML5 UP</title>
+	<title>ENTREPRENERURSHIP CLINIC</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/chartist/chartist.min.css" />
 	<link rel="stylesheet" href="assets/css/main.css" />
 	<noscript>
-		<link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+	</noscript>
 </head>
 
 <body class="is-preload">
@@ -28,19 +25,25 @@
 			<div class="content">
 				<div class="inner">
 					<h1>ENTREPRENERURSHIP CLINIC</h1>
+					<h3>Faculty of Agriculture, University of Peradeniya </h3>
 					<p>Test your strength for starting a new venture</p>
 				</div>
 			</div>
 			<nav>
 				<ul>
-					<li><a href="#c1">Need for Achievement</a></li>
-					<li><a href="#c2">Need for Autonomy</a></li>
-					<li><a href="#c3">Creative tendency</a></li>
-					<li><a href="#c4">Locus of Control</a></li>
-					<li><a href="#c5">Calculated Risk Taking</a></li>
+					<li class="c1"><a href="#c1">Need for Achievement</a><i class="fa fa-check" aria-hidden="true"></i></li>
+					<li class="c2"><a href="#c2">Need for Autonomy</a><i class="fa fa-check" aria-hidden="true"></i></li>
+					<li class="c3"><a href="#c3">Creative Tendency</a><i class="fa fa-check" aria-hidden="true"></i></li>
+					<li class="c4"><a href="#c4">Locus of Control</a><i class="fa fa-check" aria-hidden="true"></i></li>
+					<li class="c5"><a href="#c5">Calculated Risk Taking</a><i class="fa fa-check" aria-hidden="true"></i></li>
 				</ul>
 			</nav>
+			<div class="results" style="display:none">
+				<a id="show-results" href="#results" class="button">Get the Results !!!</a>
+			</div>
+
 		</header>
+
 
 		<!-- Main -->
 		<div id="main">
@@ -106,6 +109,18 @@
 				<ul class="actions">
 					<li><a href="javascript:void(0)" class="button primary submit-btn" data-quection-category="c5">Submit</a></li>
 				</ul>
+			</article>
+
+			<article id="results">
+				<h2 class="major">Results</h2>
+				<section class="result-section">
+					<h2>Congrstulations!!!</h2>
+					<blockquote>Thanks for answering our set of quections. We have gone through your answers and we calculated your <strong>NTREPRENERURSHIP
+							TENDRNCY</strong> using them.</blockquote>
+					<div class="marks">0</div>
+					<h4>Marks Distribution</h4>
+					<div class="bar-chart"></div>
+				</section>
 			</article>
 
 			<!-- Elements -->
@@ -356,7 +371,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 
 		<!-- Footer -->
 		<footer id="footer">
-			<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+			<p class="copyright">Design: <a href="#">Ruwini Daundasekara</a>.</p>
 		</footer>
 
 	</div>
@@ -368,6 +383,8 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 	<script src="assets/js/jquery.min.js"></script>
 	<script src="assets/js/browser.min.js"></script>
 	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/countUp.min.js"></script>
+	<script src="assets/chartist/chartist.min.js"></script>
 	<script src="assets/js/util.js"></script>
 	<script src="assets/js/main.js"></script>
 	<script src="assets/js/custom.js"></script>

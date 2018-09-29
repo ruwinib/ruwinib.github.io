@@ -1296,7 +1296,7 @@ input, select, textarea {
 				-webkit-transition-delay: 0.25s;
 				-ms-transition-delay: 0.25s;
 				transition-delay: 0.25s;
-				padding: 3rem 2rem;
+				padding: 3rem 1.5rem;
 				max-height: 40rem;
 				overflow: hidden;
 			}
@@ -1327,6 +1327,7 @@ input, select, textarea {
 			#header nav ul li {
 				padding-left: 0;
 				border-left: solid 1px #ffffff;
+				position: relative;
 			}
 
 				#header nav ul li:first-child {
@@ -1343,6 +1344,7 @@ input, select, textarea {
 					letter-spacing: 0.2rem;
 					font-size: 0.8rem;
 					border-bottom: 0;
+					max-width: 10rem;
 				}
 
 					#header nav ul li a:hover {
@@ -1351,6 +1353,23 @@ input, select, textarea {
 
 					#header nav ul li a:active {
 						background-color: rgba(255, 255, 255, 0.175);
+					}
+
+					#header nav ul li i {
+						position: absolute;
+						right: 0.1rem;
+						bottom: 0.1rem;
+						visibility: hidden;
+					}
+					
+					#header nav ul li i.half {
+						visibility: visible;
+						color: #bf6424;
+					}
+
+					#header nav ul li i.full {
+						visibility: visible;
+						color: #7ab97a
 					}
 
 		#header nav.use-middle:after {
@@ -1636,3 +1655,29 @@ input, select, textarea {
 		body.is-preload #footer {
 			opacity: 0;
 		}
+
+/* custom */
+
+.result-section .marks{
+	font-size: 5rem;
+    text-align: center;
+    background: azure;
+    color: #505050;
+}
+
+.result-section .bar-chart{
+	background: azure;
+}
+
+.result-section h4{
+	margin-top: 1rem;
+	padding-top: 10px;
+}
+
+.result-section .bar-chart .ct-label{
+    fill: rgba(0, 0, 0, 0.8);
+    color: rgba(0, 0, 0, 0.8);
+    font-size: .75rem;
+    line-height: 1;
+}
+
