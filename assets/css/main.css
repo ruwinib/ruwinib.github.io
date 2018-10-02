@@ -1651,6 +1651,13 @@ input, select, textarea {
 		margin-top: 2rem;
 		text-align: center;
 	}
+	#footer .message {
+		letter-spacing: 0.2rem;
+		font-size: 0.6rem;
+		opacity: 0.75;
+		text-transform: uppercase;
+		margin-bottom: 0.5rem;
+	}
 
 		#footer .copyright {
 			letter-spacing: 0.2rem;
