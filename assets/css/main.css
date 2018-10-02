@@ -1259,10 +1259,16 @@ input, select, textarea {
 				background: #ffffff;
 			}
 
+			.language-selector {
+				position: fixed;
+    			top: 1rem;
+    			right: 1rem;
+			}
+
 		#header > :first-child {
 			margin-top: 0;
 		}
-
+			
 			#header > :first-child:before {
 				display: none;
 			}
@@ -1402,6 +1408,10 @@ input, select, textarea {
 			-ms-filter: blur(0.1rem);
 			filter: blur(0.1rem);
 			opacity: 0;
+		}
+
+		body.is-article-visible .language-selector {
+			display: none;
 		}
 
 		body.is-preload #header {
