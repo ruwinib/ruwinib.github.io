@@ -1720,4 +1720,9 @@ input, select, textarea {
 	.no-print {
 		display: none;
 	}
+
+	.print-center{
+		width: 100% !important;
+		text-align: center;
+	}
 }
