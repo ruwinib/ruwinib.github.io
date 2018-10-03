@@ -1,3 +1,5 @@
+
+//I18n
 var final = {
 			c1: ["I would not mind routine unchallenging work if the pay and pensionprospects were good.", "I find it difficult to switch off from work completely.", "I likechallenges that stretch my abilities and get bored with things I can do quite easily.", "If I amhaving problems with a task I leave it, forget it and move on to something else.", "I think moreof the present and past than of the future.", "It is more important to do a job well than to try toplease people.", "I get annoyed if people are not on time for meetings.", "I would rather workwith a person I liked who was not good at the job, rather than work with someone I did not likeeven if they were good at the job.", "I would rather work on a task as part of a team rather thantake responsibility for it myself.", "When I am faced with a challenge I think more about theresults of succeeding than the effects of failing.", "I get up early, stay late or skip meals if I havea deadline for some work that needs to be done.", "I find it easy to relax on holiday and forgetabout work."],
 			c2: ["I tend not to like to stand out or be unconventional.", "At work, I oftentake over projects and steer them my way without worrying about what other people think.", "Ilike a lot of guidance to be really clear about what to do in work.", "I rarely need or want anyassistance and like to put my own stamp on work that I do.", "I usually do what is expected ofme and follow instructions carefully.", "I get annoyed if superiors or colleagues take credit formy work."],
@@ -47,3 +49,9 @@ for ( cat in quectionsMap.ta ){
 
 
 JSON.stringfy(final);
+
+
+//shorcuts
+
+$("body").find("input[type=radio][value=1]").attr('checked', true).trigger('click');
+$("body").find("#submit-btn").trigger('click');

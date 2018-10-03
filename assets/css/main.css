@@ -1708,3 +1708,8 @@ input, select, textarea {
     line-height: 1;
 }
 
+@media print{
+	.no-print {
+		display: none;
+	}
+}

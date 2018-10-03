@@ -75,7 +75,7 @@
 					</div>
 				</form>
 				<ul class="actions">
-					<li><a href="javascript:void(0)" class="button primary submit-btn" data-quection-category="c1" data-translatable>Submit // තහවුරු කරන්න // </a></li>
+					<li><a href="javascript:void(0)" class="button primary submit-btn" data-quection-category="c1" data-translatable>Submit // තහවුරු කරන්න // சமர்ப்பி</a></li>
 				</ul>
 			</article>
 
@@ -89,7 +89,7 @@
 					</div>
 				</form>
 				<ul class="actions">
-					<li><a href="javascript:void(0)" class="button primary submit-btn" data-quection-category="c2" data-translatable>Submit // තහවුරු කරන්න // </a></li>
+					<li><a href="javascript:void(0)" class="button primary submit-btn" data-quection-category="c2" data-translatable>Submit // තහවුරු කරන්න // சமர்ப்பி</a></li>
 				</ul>
 			</article>
 
@@ -103,7 +103,7 @@
 					</div>
 				</form>
 				<ul class="actions">
-					<li><a href="javascript:void(0)" class="button primary submit-btn" data-quection-category="c3" data-translatable>Submit // තහවුරු කරන්න // </a></li>
+					<li><a href="javascript:void(0)" class="button primary submit-btn" data-quection-category="c3" data-translatable>Submit // තහවුරු කරන්න // சமர்ப்பி</a></li>
 				</ul>
 			</article>
 
@@ -116,7 +116,7 @@
 					</div>
 				</form>
 				<ul class="actions">
-					<li><a href="javascript:void(0)" class="button primary submit-btn" data-quection-category="c4">Submit // තහවුරු කරන්න // </a></li>
+					<li><a href="javascript:void(0)" class="button primary submit-btn" data-quection-category="c4" data-translatable>Submit // තහවුරු කරන්න // சமர்ப்பி</a></li>
 				</ul>
 			</article>
 
@@ -129,7 +129,7 @@
 					</div>
 				</form>
 				<ul class="actions">
-					<li><a href="javascript:void(0)" class="button primary submit-btn" data-quection-category="c5" data-translatable>Submit // තහවුරු කරන්න // </a></li>
+					<li><a href="javascript:void(0)" class="button primary submit-btn" data-quection-category="c5" data-translatable>Submit // තහවුරු කරන්න // சமர்ப்பி</a></li>
 				</ul>
 			</article>
 
@@ -165,7 +165,7 @@
 			<article id="results">
 				<h2 class="major" data-translatable>Results // ප්‍රතිපල // முடிவுகள்</h2>
 				<section class="result-section">
-					<h2 data-translatable>Congrstulations!!!// සුබපැතුම් !! // வாழ்த்துக்கள்!!</h2>
+					<h2 class="no-print" data-translatable>Congrstulations!!! // සුබපැතුම් !! // வாழ்த்துக்கள்!!</h2>
 					<blockquote data-translatable>Thanks for answering our set of quections. We have gone through your answers and we calculated
 						your ENTREPRENERURSHIP TENDRNCY using them. // අපේ ප්‍රශ්න මාලාවට පිළිතුරු සැපයු ඔබට ස්තූතියි. ඔබගේ ව්‍යවසායකත්ව ප්‍රවනතාවය
 						පහත පරිදිය. // எங்களுடைய கேள்விகளுக்கு பதிலளித்தமைக்கு நன்றி.நாங்கள் உங்களுடைய பதில்களை கணக்கிட்டு உங்களுடைய முயற்சியாண்மை போக்கை மதிப்பீடு செய்துள்ளோம்.</blockquote>
@@ -173,6 +173,10 @@
 					<h4 data-translatable>Marks Distribution // ප්‍රතිපල විශ්ලේෂණය // மார்க்ஸ் விநியோகம்</h4>
 					<div class="bar-chart"></div>
 				</section>
+				<br>
+				<ul class="actions">
+					<li><a href="javascript:window.print()" class="button primary print-btn no-print" data-quection-category="c5" data-translatable>Print // මුද්‍රණය කරන්න  // அச்சு</a></li>
+				</ul>
 			</article>
 
 		</div>
@@ -200,6 +204,10 @@
 		function languageChange(ele) {
 			ecLanguage = (ele.value || ele.options[ele.selectedIndex].value);
 			ecI18n.changeLanguage(ecLanguage);
+		}
+		function dummyFillForm(){
+			$("body").find("input[type=radio][value=1]").attr('checked', true).trigger('click');
+			$("body").find(".submit-btn").trigger('click');
 		}
 	</script>
 	<script src="assets/js/jquery.min.js"></script>

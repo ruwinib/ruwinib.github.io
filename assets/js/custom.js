@@ -13,11 +13,11 @@
 	}
 
 	var totalsMap = {
-		c1: 0,
-		c2: 0,
-		c3: 0,
-		c4: 0,
-		c5: 0
+		c1: 12,
+		c2: 6,
+		c3: 12,
+		c4: 12,
+		c5: 12
 	}
 
 	var finishedStateMap = {
@@ -121,7 +121,7 @@
 				var lablesVals = [];
 				var seriesVals = [];
 				for (i in pointsMap) {
-					lablesVals.push(categoryMap[en][i]);
+					lablesVals.push(categoryMap[ecLanguage][i]);
 					seriesVals.push(parseInt(pointsMap[i] / totalsMap[i] * 100))
 				}
 
