@@ -14,6 +14,7 @@
     />
     <link rel="stylesheet" href="assets/css/main.css" />
     <link rel="stylesheet" href="assets/css/survey.css" />
+    <link rel="stylesheet" href="assets/js/chartist/chartist.min.css" />
     <link rel="stylesheet" href="assets/css/custom.css" />
 
     <noscript><link rel="stylesheet" href="assets/css/noscript.css"/></noscript>
@@ -80,8 +81,8 @@
         </section>
       </section>
 
-     
-      <footer id="footer"> <!-- Footer 
+      <footer id="footer">
+        <!-- Footer 
         <ul class="icons">
           <li>
             <a href="#" class="icon fa-twitter"
@@ -117,7 +118,18 @@
     </div>
 
     <div id="surveyElement"></div>
-    <div id="surveyResult"></div>
+    <div id="surveyResult">
+      <div class="sv_result">
+        <div class="sv_result_heading"></div>
+        <div id="final_marks" class="sv_result_val"></div>
+      </div>
+      <div id="final_chart" class="sv_bar_chart"></div>
+      <div class="kill-me sv_reload">
+        <a href="#" class="button primary" onclick="window.location.reload()"
+          >Back To Home Page</a
+        >
+      </div>
+    </div>
 
     <!-- Scripts -->
     <script src="assets/js/jquery.min.js"></script>
@@ -128,6 +140,7 @@
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
     <script src="assets/js/survey.jquery.min.js"></script>
+    <script src="assets/js/chartist/chartist.js"></script>
     <script src="assets/js/index.js"></script>
   </body>
 </html>

@@ -1,4 +1,31 @@
 .sv_page_title {
-    font-size: 1.5em !important;
-    padding-top: 10px;
+  font-size: 1.5em !important;
+  padding-top: 10px;
+}
+
+.sv_bar_chart {
+  background: white;
+}
+
+.sv_result {
+  background: white;
+  text-align: center;
+}
+
+.sv_result .sv_result_heading {
+  font-size: 1em;
+}
+.sv_result .sv_result_val {
+  font-size: 2em;
+}
+
+.kill-me {
+  display: none;
+}
+
+.sv_reload {
+  background: white;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
