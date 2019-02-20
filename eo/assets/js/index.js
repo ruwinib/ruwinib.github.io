@@ -7,6 +7,7 @@ function calculateFinalMarks(valuesObj) {
 }
 
 function init() {
+  $("#page-wrapper").hide();
   var json = {
     title: "Entrepreneurship Orientation Questionnaire",
     showProgressBar: "top",
@@ -237,8 +238,4 @@ function init() {
   $("#surveyElement").Survey({
     model: survey
   });
-}
-
-if (!window["%hammerhead%"]) {
-  init();
 }
